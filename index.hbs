@@ -1,0 +1,40 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+<style type="text/css">
+h2{
+    text-transform: none;
+}
+</style>
+
+<!-- Header -->
+<header class="intro-header" style="background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url({{@blog.cover}})">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <span class="name">Blog</span>
+                    <br>
+                    <a class="social" href="http://twitter.com/codynhat"><i class="fa fa-twitter fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'Twitter'});"></i></a>
+                    <a class="social" href="https://github.com/codynhat"><i class="fa fa-github fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'GitHub'});"></i></a>
+                    <a class="social" href="http://www.linkedin.com/pub/cody-hatfield"><i class="fa fa-linkedin-square fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'LinkedIn'});"></i></a>
+                    <a class="social" href="https://medium.com/@codynhat"><i class="fa fa-pencil fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'Blog'});"></i></a>
+                    <br><br><br>
+                    <span class="skills">Stories - Thoughts - Tutorials</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Blog Posts -->
+<section id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{> "loop"}}
+            </div>
+        </div>
+    </div>
+
+</section>
+
