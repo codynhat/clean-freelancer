@@ -46,24 +46,24 @@
     {{navigation}}
 
     {{! Everything else gets inserted here }}
-        {{{body}}}
+    {{{body}}}
 
-        <!-- Footer -->
-        <footer class="text-center">
-            <div class="footer-below">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <a class="social" href="http://twitter.com/codynhat"><i class="fa fa-twitter fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'Twitter'});"></i></a>
-                            <a class="social" href="https://github.com/codynhat"><i class="fa fa-github fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'GitHub'});"></i></a>
-                            <a class="social" href="http://www.linkedin.com/pub/cody-hatfield"><i class="fa fa-linkedin-square fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'LinkedIn'});"></i></a>
-                            <a class="social" href="https://medium.com/@codynhat"><i class="fa fa-pencil fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'Blog'});"></i></a><br><br>
-                            Copyright &copy; {{posts.[0].author.name}} 2014
-                        </div>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a class="social" href="http://twitter.com/codynhat"><i class="fa fa-twitter fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'Twitter', src: 'footer'});"></i></a>
+                        <a class="social" href="https://github.com/codynhat"><i class="fa fa-github fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'GitHub', src: 'footer'});"></i></a>
+                        <a class="social" href="http://www.linkedin.com/pub/cody-hatfield"><i class="fa fa-linkedin-square fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'LinkedIn', src: 'footer'});"></i></a>
+                        <a class="social" href="blog"><i class="fa fa-pencil fa-2x" onclick="analytics.track('Social Media Clicked', { social_media: 'Blog', src: 'footer'});"></i></a><br><br>
+                        Copyright &copy; Cody Hatfield 2015
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll visible-xs visble-sm">
